@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-color: rgb(190, 188, 188);
+        
+    }
+    .subtítulo {
+        color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 55px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-shadow: 2px 5px #000;
+        font-size: center;
+        text-align: center;
+    }
+    .card-title {
+        font-size: 8-px;
+    }
+</style>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top position-fixed m-auto">
+        <div class="container-fluid">
+          <img src="/img/perfil.jpeg" class="rounded-circle" alt="..." style="width: 55px; height: 55px;">
+          <a class="navbar-brand" href="#">My Profile</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Social Media</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.linkedin.com/in/eduardo-ceve-1130a7229">Linkedin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://wa.me/55041999915081">Whatsapp</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mailto:eduardo.silva@compwire.com.br">Email</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Academic Education</a></li>
+                    <li><a class="dropdown-item" href="#">Graduation in Progress</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Professional Experience</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    
+      <!-- Carrosel de Imagens -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: black" ></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: black"> </button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: black"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/compwire.jpeg" class="d-block w-100" width="1 300" height="700" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/medianeira.png" class="d-block w-100" width="1 300" height="700" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/Pucpr-logo.png" class="d-block w-100" width="1 300" height="700" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black"></span>
+          <span class="visually-hidden" >Next</span>
+        </button>
+      </div>
+
+<br>
+<br>
+<br>
+<br>
+
+    <!-- Subtítulo -->
+    <hr>
+    <div class="subtítulo">
+        <p>skills & Habilits</p>
+    </div>
+  <hr>
+
+      <!-- Grid Cards -->
+
+      <!-- Card Professional Experience -->
+      <div class="row row-cols-1 row-cols-md-4 g-4 col-11 m-auto">
+        <div class="col">
+          <div class="card">
+            <img src="/img/compwire.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Professional Experience</h5>
+              <p class="card-text">3 months working for <b>Compwire</b> and attribuing much knowledge.</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                See more...
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Professional Experience</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="/img/compwire.jpeg" class="card-img-top" alt="...">
+                      <p class="modal-text">3 months working for <b>Compwire</b> and attribuing much knowledge. </p>
+                      <p class="modal-text">Attributing experience in the DevOps area, where I am specializing in several laguages and frameworks. </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <!-- Card Graduation in Progress -->
+        <div class="col">
+          <div class="card">
+            <img src="/img/Pucpr-logo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Graduation in Progress</h5>
+              <p class="card-text">I'm the fifth period in the software engeneer course at <b>PUCPR</b></p>      
+              </div>
+            </div>
+          </div>      
+        
+        
+        
+        <!-- Card Work Habits -->
+          <div class="col">
+          <div class="card">
+            <img src="/img/habilidades.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Work Habits</h5>
+              <p class="card-text">
+                <ol>
+                    <li><b>Ponctuality</b></li>
+                    <li><b>Proactive</b></li>
+                    <li><b>Strong communication skills</b></li>
+                    <li><b>Organized</b></li>
+                    <li><b>Strict adherence to deadlines</b></li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <!-- Card Academic Education -->
+        <div class="col">
+          <div class="card">
+            <img src="/img/medianeira.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Academic Education</h5>
+              <p class="card-text">Most of my academic training was at the <b>Medianeira school</b>, but I also attended schools such as <b>Acesso school</b> and <b>Positvo school</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <br>
+      <br>
+      <br>
+      
+    <!-- Card Profile -->
+    <hr>
+    <div class="subtítulo">
+        <p>Profile</p>
+    </div>
+  <hr>
+
+      <!-- Card Profile -->
+
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 mt-5 pt-5">
+          <div class="row z-depth-3">
+            <div class="com-sm-4 bg-info rounded-left">
+              <div class="card-block text-center text-white">
+                <i class="fas fa-user-tie fa-7x mt-5">
+                  <h2 class="font-weight-bold mt-4">Eduardo</h2>
+                  <p>Developer</p>
+                  <i class="far fa-edit fa-2x mb-4 "></i>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> 
+</body>
+</html>
